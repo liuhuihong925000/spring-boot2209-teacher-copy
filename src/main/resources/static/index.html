@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>我的首页</title>
+    </head>
+    <body>
+        <!--
+            <h1-h6>:标题，1-6级标题。标题独占一行
+                    <h1>我是标题</h1>
+                    <h2>我是标题</h2>
+                    <h3>我是标题</h3>
+                    <h4>我是标题</h4>
+                    <h5>我是标题</h5>
+                    <h6>我是标题</h6>
+            <center>:将其范围内的组件在页面上剧中显示，该标签在HTML5中已经不建议使用了。没学CSS前临时用
+            <input>:输入组件，该组件有不同种类型，使用type标记对应的类型。
+                    type属性常用的值:
+                    type="text":文本框
+                    type="button":按钮
+                    type="submit":提交表单按钮
+                    type="password":密码框
+                    type="checkbox":多选框
+                    type="radio":单选框
+                    像多选框和单选框是依靠name属性分组的，名字相同的为一组。
+            <br>:换行
+            <a>:超链接，标签中间的文本就是超链接上提示的文字，href属性用于指定点击超链接后
+                跳转的路径。
+            <table>:表格。属性border用于指定边框。
+                    <table>标签中包含<tr>标签用于表示行
+                    <tr>标签中包含<td>标签用于表示列
+                    <td>标签中常见属性:
+                    align:对其方式。left左对齐,right右对齐,center剧中对其
+                    colspan:跨列合并列，合并是从左向右合并列
+                    rowspan:跨行合并列，合并是从上向下合并列
+         -->
+        <center>
+            <h1>百度</h1>
+            <input type="text" size="36">
+            <input type="button" value="百度一下"><br>
+            男<input name="gender" type="radio"> 女<input name="gender" type="radio">
+            <br>
+            <!--
+                当超链接种访问的是本网站的其他页面是，通常指定路径时从"/"开始。
+                这个"/"就是URL种抽象路径中最开始的"/"
+                                     v
+                http://localhost:8080/index.html
+
+                SpringBoot项目给我们的约定，如果是加载静态资源，那么抽象路径最开始的
+                "/"相当与就是static目录。
+            -->
+            <a href="/reg.html">注册</a>
+            <a href="/login.html">登录</a>
+            <a href="/userList.html">用户列表</a>
+            <a href="/writeArticle.html">发表文章</a>
+            <a href="/classtable.html">课程表</a>
+            <br>
+            <a href="http://www.taobao.com">淘宝</a>
+            <br>
+            <table border="1">
+                <tr>
+                    <td>第1列</td>
+                    <td>第2列</td>
+                    <td colspan="2" align="center">第3列</td>
+                </tr>
+                <tr>
+                    <td>第1列</td>
+                    <td rowspan="2">第2列</td>
+                    <td>第3列</td>
+                    <td>第4列</td>
+                </tr>
+                <tr>
+                    <td>第1列</td>
+                    <td>第3列</td>
+                    <td>第4列</td>
+                </tr>
+                <tr>
+                    <td>第1列</td>
+                    <td colspan="3" align="center">第2列</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
+
+
+
+
+
